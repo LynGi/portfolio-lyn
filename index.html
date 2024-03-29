@@ -73,7 +73,7 @@
 
             <div class="content">
                 <div class="text">
-                    <h2>Hola mundo!</h1>
+                    <h2>Hola mundo!</h2>
                     <h1>Soy <span class="typing-text"></span></h1>
                     <p>Profesional en Psicología y actualmente embarcada en una emocionante travesía hacia el Desarrollo Web.</p>
                     <a href="#about" class="btn">Sobre Mí <i class="fas fa-user"></i></a>
@@ -562,15 +562,17 @@
                 </div>
             </div>
     
-            <form method="post" class="contact-form" id="contactUs-Form">
+            <!-- <form method="post" class="contact-form" id="contactUs-Form"> -->
+            <form action="submit.php" method="post" class="contact-form">
                     
                 <input type="text" name="name" class="box" id="name" placeholder="Nombre" required />
                 <input type="email" name="email" class="box" id="email" placeholder="Email" required />
                 <input type="text" name="subject" class="box" id="subject" placeholder="Asunto" required />
                 <textarea cols="20" rows="6" name="comment" id="comment" class="box" placeholder="Mensaje"></textarea>
-                <button type="submit" class="btn" name="submit" id="submit">Enviar mensaje</button>
-                
-                <span class="alert" id="msg"></span>
+                <!-- <button type="submit" class="btn" name="submit" id="submit">Enviar mensaje</button> -->
+                <input type="submit" class="btn" name="submit" id="submit" value="Enviar mensaje">/>
+
+                <!-- <span class="alert" id="msg"></span> -->
                 
             </form>
             
@@ -626,7 +628,7 @@
     </script>
 
     <!-- Contact-Form Script -->
-    <script>
+    <!-- <script>
         jQuery('#contactUs-Form').on('submit',function(e){
           jQuery('#msg').html('');
           jQuery('#submit').html('Enviando mensaje');
@@ -644,7 +646,7 @@
           });
           e.preventDefault();
         });
-    </script>
+    </script> -->
 
 </body>
 </html>
