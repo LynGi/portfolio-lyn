@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     header("Location: formulario_contacto.html");
     exit;
 }
-?>
+
 
 
 // if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['subject']) && isset($_POST['comment'])){
@@ -78,3 +78,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 // 	}
 // 	echo $msg;
 // }
+
